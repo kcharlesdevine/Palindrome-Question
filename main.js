@@ -1,14 +1,12 @@
-const isPalindrome = function(str) {
-  let flatString = string.toLowerCase();
+const isPalindrome = function(userInput) {
+  let flatString = userInput.toLowerCase();
   let splitString = flatString.split('');
   let reversedArray = splitString.reverse();
   let reversedString = reversedArray.join('');
-    if (flatString == reversedString){
-      console.log('true')
-    } else {
-      console.log('false')
+    if (flatString === reversedString){
+      return true 
+    } 
+     else {
+      return false
     }
   };
-
-let string = 'Bridge'
-isPalindrome(string);
